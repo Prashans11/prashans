@@ -1,0 +1,53 @@
+<svg width="500" height="120" viewBox="0 0 500 120" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Prashans Sharma tech stack">
+  <style>
+    .fadeIn {
+      animation: fadeIn 2s ease-in-out forwards;
+      opacity: 0;
+    }
+    .pulse {
+      animation: pulse 3s infinite ease-in-out;
+      transform-origin: center;
+    }
+    @keyframes fadeIn {
+      to { opacity: 1; }
+    }
+    @keyframes pulse {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.15); }
+    }
+    text {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-weight: 600;
+      fill: #61dafb;
+      font-size: 26px;
+      user-select: none;
+    }
+  </style>
+  
+  <!-- Name -->
+  <text class="fadeIn" x="20" y="40">Prashans Sharma</text>
+  
+  <!-- Icons group -->
+  <g transform="translate(20, 60)" >
+    <!-- Angular icon -->
+    <g class="pulse" style="animation-delay: 0s;">
+      <circle cx="20" cy="20" r="18" fill="#dd0031" />
+      <path fill="white" d="M13 15.5h6L16 28 13 15.5zM25 15.5h-6L20 28l5-12.5z" />
+    </g>
+    <!-- Java icon -->
+    <g class="pulse" transform="translate(70, 0)" style="animation-delay: 0.3s;">
+      <circle cx="20" cy="20" r="18" fill="#f89820" />
+      <path fill="white" d="M16 10s-6 2-6 6 6 5 6 5-5 0-5 4h10c0-5-8-8-8-15z" />
+    </g>
+    <!-- Spring Boot icon -->
+    <g class="pulse" transform="translate(120, 0)" style="animation-delay: 0.6s;">
+      <circle cx="20" cy="20" r="18" fill="#6db33f" />
+      <path fill="white" d="M14 10h12v20H14z" />
+    </g>
+    <!-- MySQL icon -->
+    <g class="pulse" transform="translate(170, 0)" style="animation-delay: 0.9s;">
+      <circle cx="20" cy="20" r="18" fill="#4479a1" />
+      <ellipse fill="white" cx="20" cy="20" rx="6" ry="10" />
+    </g>
+  </g>
+</svg>
