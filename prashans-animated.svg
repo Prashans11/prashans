@@ -1,0 +1,55 @@
+<svg width="600" height="220" viewBox="0 0 600 220" xmlns="http://www.w3.org/2000/svg" style="background: none;">
+  <style>
+    text {
+      fill: #444; /* Default for light theme */
+      font-family: 'Segoe UI', sans-serif;
+      font-weight: bold;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      text {
+        fill: #ccc; /* For dark theme */
+      }
+    }
+
+    .name {
+      font-size: 48px;
+    }
+
+    .punchline {
+      font-size: 28px;
+      font-weight: 600;
+      fill: #555;
+    }
+  </style>
+
+  <!-- Prashans from top -->
+  <text class="name" x="100" y="-50" opacity="0">Prashans
+    <animate attributeName="y" from="-50" to="80" dur="1.5s" fill="freeze" />
+    <animate attributeName="opacity" from="0" to="1" dur="1.5s" fill="freeze" />
+  </text>
+
+  <!-- Sharma from bottom -->
+  <text class="name" x="320" y="250" opacity="0">Sharma
+    <animate attributeName="y" from="250" to="80" dur="1.5s" begin="0.3s" fill="freeze" />
+    <animate attributeName="opacity" from="0" to="1" dur="1.5s" begin="0.3s" fill="freeze" />
+  </text>
+
+  <!-- Punchline -->
+  <text class="punchline" y="160" opacity="0">
+    <!-- "Code." from left -->
+    <tspan x="100">
+      <animate attributeName="x" from="-150" to="100" dur="1.5s" begin="0.8s" fill="freeze" />
+      <animate attributeName="opacity" from="0" to="1" dur="1.5s" begin="0.8s" fill="freeze" />
+      Code.
+    </tspan>
+    <!-- space -->
+    <tspan> </tspan>
+    <!-- "Repeat." from right -->
+    <tspan x="260">
+      <animate attributeName="x" from="750" to="260" dur="1.5s" begin="0.8s" fill="freeze" />
+      <animate attributeName="opacity" from="0" to="1" dur="1.5s" begin="0.8s" fill="freeze" />
+      Play. Repeat.
+    </tspan>
+  </text>
+</svg>
